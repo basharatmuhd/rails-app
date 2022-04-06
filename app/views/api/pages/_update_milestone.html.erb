@@ -1,0 +1,48 @@
+<h3>PUT /api/milestones/:id</h3>
+<div>
+  update a milestone
+</div>
+<b>Resource URL </b>
+<div>
+  http://localhost:3000/api/milestones/:id
+</div>
+<b>Example request</b>
+<div>
+  curl -XPUT -H 'Authorization: Bearer auth_token' --data "milestone[phase_name]=John Edwards..." "http://localhost:3000/api/milestones/:id"
+  <br/>
+  auth_token: jwt token of current user
+</div>
+<h4> Parameters</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <th style='width: 200px'> Name </th>
+    <th style='width: 100px'>Required</th>
+    <th style='width: 100px'>Data type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>milestone[phase_name]</td>
+    <td>N</td>
+    <td>String</td>
+    <td>Phase name</td>
+  </tr>
+  <tr>
+    <td>milestone[suggestions]</td>
+    <td>N</td>
+    <td>String</td>
+    <td>suggestions</td>
+  </tr>
+</table>
+
+<h4>Response </h4>
+<div>
+ a json object
+</div>
+<h4>sample response</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <td>
+      {"milestone":{"id":1,"project_id":1,"phase_name":"John Edwards...","suggestions":"suggestions ...","status":"completed"}}
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,53 @@
+<h3>POST /api/sign_in</h3>
+<div>
+  Sign in
+</div>
+<b>Resource URL </b>
+<div>
+  http://localhost:3000/api/sign_in
+</div>
+<b>Example request</b>
+<div>
+  curl --data "auth[email]=user1@test.st&auth[password]=123456" "http://localhost:3000/api/sign_in"
+</div>
+<h4> Parameters</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <th style='width: 200px'> Name </th>
+    <th style='width: 100px'>Required</th>
+    <th style='width: 100px'>Data type</th>
+    <th>Description</th>
+  </tr>
+
+  <tr>
+    <td>auth[email]</td>
+    <td>Y</td>
+    <td>string</td>
+    <td>Email</td>
+  </tr>
+  <tr>
+    <td>auth[password]</td>
+    <td>Y</td>
+    <td>string</td>
+    <td>Password</td>
+  </tr>
+  <tr>
+    <td>device_uid</td>
+    <td>N</td>
+    <td>string</td>
+    <td>device uid which we’ll get on Android client</td>
+  </tr>
+</table>
+
+<h4>Response </h4>
+<div>
+ a json object
+</div>
+<h4>sample response</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <td>
+      {"user":<%= render 'api/pages/objects/user' %>, "meta":{"jwt":"eyJ0eXAiOiJKFc_5M4QJdlFjt3sdOA_o", "can_receive_payments":true}}
+    </td>
+  </tr>
+</table>

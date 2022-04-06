@@ -1,0 +1,42 @@
+<h3>GET /api/activities</h3>
+<div>
+  List activities
+</div>
+<b>Resource URL </b>
+<div>
+  http://localhost:3000/api/activities
+</div>
+<b>Example request</b>
+<div>
+  curl -X GET -H 'Authorization: Bearer auth_token' "http://localhost:3000/api/activities?project_id=1"
+  <br/>
+  auth_token: jwt token of current user
+</div>
+<h4> Parameters</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <th style='width: 200px'> Name </th>
+    <th style='width: 100px'>Required</th>
+    <th style='width: 100px'>Data type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>project_id</td>
+    <td>Y</td>
+    <td>integer</td>
+    <td>id of project</td>
+  </tr>
+</table>
+
+<h4>Response </h4>
+<div>
+ a json object
+</div>
+<h4>sample response</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <td>
+      {"activities":[{"id":4,"key":"charge.succeeded","owner_id":5,"owner_type":"Charge","owner":null,"trackable_id":10,"trackable_type":"Project","created_at":"2018-08-19T09:20:47.428Z"},{"id":3,"key":"project.created","owner_id":1,"owner_type":"User","owner":null,"trackable_id":10,"trackable_type":"Project","created_at":"2018-08-19T09:20:14.472Z"}]}
+    </td>
+  </tr>
+</table>

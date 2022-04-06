@@ -1,0 +1,42 @@
+<h3>POST /api/merchants</h3>
+<div>
+  Create merchant from authorization code
+</div>
+<b>Resource URL </b>
+<div>
+http://localhost:3000/api/merchants
+</div>
+<b>Example request</b>
+<div>
+  curl -X POST -H 'Authorization: Bearer auth_token' -d "code=ac_DMtsWT9Q5a8D4B2BNktt" "http://localhost:3000/api/merchants"
+  <br/>
+  auth_token: jwt token of current user
+</div>
+<h4>Parameters</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <th style='width: 200px'> Name </th>
+    <th style='width: 100px'>Required</th>
+    <th style='width: 100px'>Data type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>code</td>
+    <td>Y</td>
+    <td>string</td>
+    <td>authorization code</td>
+  </tr>
+</table>
+
+<h4>Response </h4>
+<div>
+ a json object
+</div>
+<h4>sample response</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <td>
+      {"stripe_publishable_key":"pk_test_r2A6xVbhVc9Ae3UZ0Hj95W3c"}
+    </td>
+  </tr>
+</table>

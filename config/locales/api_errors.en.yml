@@ -1,0 +1,31 @@
+en:
+  api_validation:
+    codes:
+      blank: 1000
+      taken: 1001
+      too_short: 1002
+      invalid: 1003
+      inclusion: 1004
+
+  api_error:
+    codes:
+      not_found: 5000
+    account_not_activated:
+      code: 6000
+      message: Your account is not activated yet
+    authentication_failed:
+      code: 6001
+      message: Your email or password is not correct
+    account_not_confirmed:
+      code: 6002
+      message: Your account is not confirmed yet
+    errors:
+      not_found:
+        code: 10404
+        message: "The %{object_type_title} is not found"
+      not_deleted:
+        code: 10407
+        message: "The %{object_type_title} cannot be deleted"
+      cannot_update_or_destroy:
+        code: 10415
+        message: "Cannot update or destroy the %{object_type_title}"

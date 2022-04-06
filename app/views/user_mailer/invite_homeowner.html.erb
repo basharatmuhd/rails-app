@@ -1,0 +1,14 @@
+<p>Welcome to Leveled! The tool that makes it easy to track and pay for your home improvement projects. Your Leveled Pro Contractor has created a project for you to join.</p>
+
+<p>
+  <% if @change_password %>
+    <% reset_password_token =  @user.send(:set_reset_password_token) %>
+    <a href="<%= hyperlect_app_url(mode: 'reset_password', reset_password_token: reset_password_token) %>">
+      Click here to access your project!</a>
+  <% else %>
+    <a href="<%= hyperlect_app_url(mode: 'invite_homeowners') %>">
+      Click here to access your project!</a>
+  <% end %>
+</p>
+
+<p>Remember, a My Project's Account has been set up for you. This allows you to hold money towards your project. Use this feature to make payments, show proof of funds, or release the payment when it’s time! Your project management just got easier!</p>

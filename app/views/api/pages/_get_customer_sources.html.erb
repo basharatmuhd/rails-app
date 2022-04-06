@@ -1,0 +1,28 @@
+<h3>GET /api/payments/customer_sources</h3>
+<div>
+  Get customer sources/cards
+</div>
+<b>Resource URL </b>
+<div>
+http://localhost:3000/api/payments/customer_sources
+</div>
+<b>Example request</b>
+<div>
+  curl -X GET -H 'Authorization: Bearer auth_token' "http://localhost:3000/api/payments/customer_sources"
+  <br/>
+  auth_token: jwt token of current user
+</div>
+<h4>No Parameters</h4>
+
+<h4>Response </h4>
+<div>
+ a json object
+</div>
+<h4>sample response</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <td>
+      {"customer":{"id":"cus_DODpJcMT7gvs5U","default_source":"card_1CyyliLAtlBF1XR1uqUo0dVZ","sources":[{"id":"card_1CyyliLAtlBF1XR1uqUo0dVZ","object":"card","brand":"Visa","country":"US","cvc_check":"pass","exp_month":12,"exp_year":2020,"last4":"0077"},{"id":"card_1CyyhdLAtlBF1XR1ter3s1dT","object":"card","brand":"American Express","country":"US","cvc_check":"pass","exp_month":12,"exp_year":2019,"last4":"8431"},{"id":"card_1CxRGgLAtlBF1XR1Cox7bUAk","object":"card","brand":"Visa","country":"US","cvc_check":"pass","exp_month":12,"exp_year":2019,"last4":"4242"}]}}
+    </td>
+  </tr>
+</table>

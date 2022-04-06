@@ -1,0 +1,28 @@
+<h3>GET /api/s3_access</h3>
+<div>
+  get s3 access
+</div>
+<b>Resource URL </b>
+<div>
+  http://localhost:3000/api/s3_access
+</div>
+<b>Example request</b>
+<div>
+  curl -H 'Authorization: Bearer auth_token' "http://localhost:3000/api/s3_access"
+  <br/>
+  auth_token: jwt token of current user
+</div>
+<h4>No Parameters</h4>
+
+<h4>Response </h4>
+<div>
+ a json object
+</div>
+<h4>sample response</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <td>
+      {"s3_region_endpoint":"s3.amazonaws.com","x_amz_algorithm":"AWS4-HMAC-SHA256","x_amz_credential":"AKIAJ3UXQ/20180803/us-east-1/s3/aws4_request","x_amz_date":"20180803T035855Z","x_amz_signature":"9b4bb4af731a1047f6dd46a609ab3b8687f847a151bf875e630d683b0500e7e1","policy":"eyJleHBpcmF0aW9uIjoiMjXV19"}
+    </td>
+  </tr>
+</table>

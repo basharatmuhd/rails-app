@@ -1,0 +1,28 @@
+<h3>GET /api/merchants/stripe_account</h3>
+<div>
+  Get contractor stripe-account
+</div>
+<b>Resource URL </b>
+<div>
+http://localhost:3000/api/merchants/stripe_account
+</div>
+<b>Example request</b>
+<div>
+  curl -H 'Authorization: Bearer auth_token' "http://localhost:3000/api/merchants/stripe_account"
+  <br/>
+  auth_token: jwt token of current user
+</div>
+<h4>No Parameters</h4>
+
+<h4>Response </h4>
+<div>
+ a json object
+</div>
+<h4>sample response</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <td>
+      {"account":{"id":"acct_1CwtZrHobSjeM7p0","business_name":null,"email":"vuongbao6@gmail.com","country":"US","external_accounts":[{"object":"card","address_city":null,"address_country":"US","address_line1":null,"address_line1_check":null,"address_line2":null,"address_state":null,"address_zip":null,"address_zip_check":null,"available_payout_methods":["standard","instant"],"brand":"Visa","country":"US","currency":"usd","cvc_check":null,"default_for_currency":true,"dynamic_last4":null,"exp_month":12,"exp_year":2022,"funding":"debit","last4":"5556"}]}}
+    </td>
+  </tr>
+</table>

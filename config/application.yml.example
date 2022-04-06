@@ -1,0 +1,20 @@
+HOST: "localhost"
+CONTACT_US_EMAIL: "bao@test.com"
+HYPERLECTAPP_URL: "exp://10.198.25.146:19000" # "hyperlect://hyperlectapp"
+
+SENDGRID_USERNAME: "ap9@heroku.com"
+SENDGRID_PASSWORD: "qug172"
+
+AWS_ACCESS_KEY_ID: "AKIAJV"
+AWS_SECRET_ACCESS_KEY: "du1Ud9wsJEEbLphB1"
+AWS_BUCKET: "swipe-dev"
+AWS_REGION: "ap-southeast-1"
+
+STRIPE_PUBLISHABLE_KEY: "pk_test_KzSOKIEFow"
+STRIPE_SECRET_KEY: "sk_test_k72tAVAwpoEBQD"
+STRIPE_CLIENT_ID: "ca_DLKCBCGRUG0tr7D"
+STRIPE_SIGNING_SECRET: "whsec_2WPkDIdnA1wIsnld5vXn7"
+STRIPE_SIGNING_SECRET_OF_CONNECT_APP: "whsec_fhdtAvX6mmjqPuQnhfneZF"
+
+# for production
+REDIS_URL: "redis://h:p1d99fc@ec2-0.com.aws.com:12839"

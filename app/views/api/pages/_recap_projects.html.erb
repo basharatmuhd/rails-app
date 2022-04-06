@@ -1,0 +1,28 @@
+<h3>GET /api/projects/recap</h3>
+<div>
+  recap
+</div>
+<b>Resource URL </b>
+<div>
+  http://localhost:3000/api/projects/recap
+</div>
+<b>Example request</b>
+<div>
+  curl -X GET -H 'Authorization: Bearer auth_token' "http://localhost:3000/api/projects/recap"
+  <br/>
+  auth_token: jwt token of current user
+</div>
+<h4>No Parameters</h4>
+
+<h4>Response </h4>
+<div>
+ a json object
+</div>
+<h4>sample response</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <td>
+      {"paid_amount":1495.0,"unpaid_amount":0,"paid_percent":100.0,"unpaid_percent":0,"money_per_month":[{"year":2018,"month":7,"amount_for_merchant":0},{"year":2018,"month":8,"amount_for_merchant":495.0},{"year":2018,"month":9,"amount_for_merchant":0},{"year":2018,"month":10,"amount_for_merchant":1000.0}]}
+    </td>
+  </tr>
+</table>

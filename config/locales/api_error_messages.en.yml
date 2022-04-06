@@ -1,0 +1,18 @@
+en:
+  all_funds_need_to_be_paid_out: All funds need to be paid out
+  contractor_should_add_milestones: Contractor should add milestones
+  change_password_failed: Reset password link has been expired
+  email_sent: An email is sent
+  user_not_found: User was not found
+  user_could_not_do_action: The user could not do the action
+  only_contractor_could_do_action: Only contractor could do the action
+  only_homeowner_could_do_action: Only homeowner could do the action
+  please_connect_stripe: Please connect stripe
+  some_errors: Some errors
+  should_not_delete_card: You should not delete your card
+  contractor_not_added_bank_account: Your contractor has not added a bank account to receive funding. Please try again later
+  project_homeowner_email_taken: "Project homeowner's email has already been taken"
+  you_had_connected: "You had connected"
+  homeowner_must_signup_with_different_email: "This email address is already tied to a Contractor account. Contractor and Homeowner accounts must use different emails. Please use a different email for this user."
+  amount_should_greater_than_or_equal_to_15_dollar: "Amount should be greater than or equal to $15"
+  remainder_should_greater_than_or_equal_to_15_dollar: "There is a minimum transaction size of $15. The balance after this transaction will be less than $15. Please either pay in full or make a smaller payment so the remaining balance exceeds $15"

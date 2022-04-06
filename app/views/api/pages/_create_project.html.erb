@@ -1,0 +1,84 @@
+<h3>POST /api/projects</h3>
+<div>
+  create a project
+</div>
+<b>Resource URL </b>
+<div>
+  http://localhost:3000/api/projects
+</div>
+<b>Example request</b>
+<div>
+  curl -X POST -H 'Authorization: Bearer auth_token' -H "Content-Type: application/json" --data '{ "project":{"name":"John Edwards","client_name":"Matthew Nowak", "address":"3456 N. Milionnaya street","duration":"4 days", "total_amount_due":"20000","project_homeowners_attributes":[{"email":"homeowner1@test.com"},{"email":"homeowner2@test.com"}], "milestones_attributes": [{"phase_name":"John Edwards", "suggestions":"suggestions ..."}]} }' "http://localhost:3000/api/projects"
+  <br/>
+  auth_token: jwt token of current user
+</div>
+<h4> Parameters</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <th style='width: 200px'> Name </th>
+    <th style='width: 100px'>Required</th>
+    <th style='width: 100px'>Data type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>project[name]</td>
+    <td>Y</td>
+    <td>string</td>
+    <td>Project name</td>
+  </tr>
+  <tr>
+    <td>project[client_name]</td>
+    <td>Y</td>
+    <td>string</td>
+    <td>Client name</td>
+  </tr>
+  <tr>
+    <td>project[address]</td>
+    <td>Y</td>
+    <td>string</td>
+    <td>Project address</td>
+  </tr>
+  <tr>
+    <td>project[duration]</td>
+    <td>Y</td>
+    <td>string</td>
+    <td>Project duration</td>
+  </tr>
+  <tr>
+    <td>project[total_amount_due]</td>
+    <td>Y</td>
+    <td>float</td>
+    <td>Total amount due</td>
+  </tr>
+  <tr>
+    <td>project[project_homeowners_attributes][i][email] with integer i (0,1,2,3, …)</td>
+    <td>Y</td>
+    <td>string</td>
+    <td>Email of homeowner</td>
+  </tr>
+  <tr>
+    <td>project[milestones_attributes][i][phase_name] with integer i (0,1,2,3, …)</td>
+    <td>Y</td>
+    <td>string</td>
+    <td>Phase name</td>
+  </tr>
+  <tr>
+    <td>project[milestones_attributes][i][suggestions] with integer i (0,1,2,3, …)</td>
+    <td>Y</td>
+    <td>string</td>
+    <td>suggestions</td>
+  </tr>
+</table>
+
+<h4>Response </h4>
+<div>
+ a json object
+</div>
+<h4>sample response</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <td>
+      {"project":{"id":2,"name":"John Edwards","client_name":"Matthew Nowak","address":"3456 N. Milionnaya street","duration":"5 days","total_amount_due":20000.0},"homeowners":[{"id":4,"email":"homeowner3@test.com","full_name":null,"avatar_path":null,"created_at":"2018-07-10T13:32:14.291Z"}], "milestones":[]}
+    </td>
+  </tr>
+</table>

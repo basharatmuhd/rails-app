@@ -1,0 +1,29 @@
+<h3>GET /api/merchants/authorize_url</h3>
+<div>
+  Get authorize_url for merchant
+</div>
+<b>Resource URL </b>
+<div>
+http://localhost:3000/api/merchants/authorize_url
+</div>
+<b>Example request</b>
+<div>
+  curl -H 'Authorization: Bearer auth_token' "http://localhost:3000/api/merchants/authorize_url"
+  <br/>
+  auth_token: jwt token of current user
+</div>
+<h4>No Parameters</h4>
+
+
+<h4>Response </h4>
+<div>
+ a json object
+</div>
+<h4>sample response</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <td>
+      {"url":"https://connect.stripe.com/express/oauth/authorize?response_type=code&client_id=ca_DLKCs8etr7D&state=1533565548.4409084&scope=read_only"}
+    </td>
+  </tr>
+</table>

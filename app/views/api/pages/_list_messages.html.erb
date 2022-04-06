@@ -1,0 +1,54 @@
+<h3>GET /api/messages</h3>
+<div>
+  List messages
+</div>
+<b>Resource URL </b>
+<div>
+  http://localhost:3000/api/messages
+</div>
+<b>Example request</b>
+<div>
+  curl -X GET -H 'Authorization: Bearer auth_token' "http://localhost:3000/api/messages?project_id=2"
+  <br/>
+  auth_token: jwt token of current user
+</div>
+<h4> Parameters</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <th style='width: 200px'> Name </th>
+    <th style='width: 100px'>Required</th>
+    <th style='width: 100px'>Data type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>project_id</td>
+    <td>Y</td>
+    <td>integer</td>
+    <td>id of a project</td>
+  </tr>
+  <tr>
+    <td>page</td>
+    <td>N</td>
+    <td>integer</td>
+    <td>an integer, default: 1</td>
+  </tr>
+  <tr>
+    <td>per_page</td>
+    <td>N</td>
+    <td>integer</td>
+    <td>an integer, default: 25</td>
+  </tr>
+</table>
+
+<h4>Response </h4>
+<div>
+ a json object
+</div>
+<h4>sample response</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <td>
+      {"messages":[{"id":1,"project_id":2,"user_id":7,"content":"Hi"}]}
+    </td>
+  </tr>
+</table>

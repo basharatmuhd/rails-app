@@ -1,0 +1,28 @@
+<h3>PUT /api/merchants/deauthorize</h3>
+<div>
+  deauthorize a merchant
+</div>
+<b>Resource URL </b>
+<div>
+  http://localhost:3000/api/merchants/deauthorize
+</div>
+<b>Example request</b>
+<div>
+  curl -XPUT -H 'Authorization: Bearer auth_token' "http://localhost:3000/api/merchants/deauthorize"
+  <br/>
+  auth_token: jwt token of current user
+</div>
+<h4>No Parameters</h4>
+
+<h4>Response </h4>
+<div>
+ a json object
+</div>
+<h4>sample response</h4>
+<table border="1" style="width:100%">
+  <tr>
+    <td>
+      {success: true}
+    </td>
+  </tr>
+</table>
